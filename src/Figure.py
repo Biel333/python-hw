@@ -7,3 +7,9 @@ class Figure:
     @property
     def info(self):
         return self.name, self.S, self.P
+
+    def add_area(self, figure):
+        if isinstance(figure, Figure):
+            print("ETO FIGURA")
+        else:
+            raise ValueError("You can create only Figure!")
